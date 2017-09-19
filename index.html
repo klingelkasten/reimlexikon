@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+        shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Reimlexikon</title>
+    <link rel="stylesheet" href="libs/jquery/jquery.mobile-1.4.5.css" />
+   
+
+    <!-- This following script, cordova.js, hooks up the web container with the installed plug-ins, and is already included into Evothings Viewer (i.e. you don't need to add this script file to your project folder).  -->
+    <script src="cordova.js"></script>
+
+    <script src="libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="libs/jquery/jquery.mobile-1.4.5.js"></script>
+
+    <script>
+    // Redirect console.log to Evothings Workbench, so you can see data coming in under 'Tools'. If you're not 
+    // using Evothings, you can skip this part.
+    if (window.hyper && window.hyper.log) { hyper.log = console.log }
+    </script>
+    
+</head>
+
+ 
+
+<body>
+
+<form id="reimform" action="#" method="get" name="Formular" style="text-align: center">	
+
+<div class="row">	
+
+<div class="col-md-20">	
+	<input id="suche" class="field" placeholder="Wort oder Silbe eingeben" name="suche" type="text" value="Liebe" />
+</div>	
+
+<div class="col-md-10">	
+
+ <select id="laenge" name="laenge">
+	 <option value="">Zeichenlänge &infin;</option>
+	 <option value="5">Zeichenlänge &lt; 5</option>
+	 <option value="8">Zeichenlänge &lt; 8</option>
+	 <option value="12">Zeichenlänge &lt; 12</option>
+	 <option value="15">Zeichenlänge &lt; 15</option>
+ </select>	
+
+</div>
+
+</div>
+	
+<div class="row">	
+
+<div class="col-md-10 center">	
+	
+ <select id="unrein" name="unrein">
+	 <option value="0">Nur reine Reime anzeigen!</option>
+	 <option value="1">Auch unreime Reime anzeigen</option>
+ </select>
+
+</div>	
+
+<div class="col-md-10 center">	
+	
+
+ <select id="silben" name="silben">
+	 <option value="1">Eine Silbe</option>
+	 <option value="2">Zwei Silben</option>
+	 <option value="3">Drei Silben</option>
+ </select>
+	
+	
+</div>
+	
+<div class="col-md-10 center">	
+<input class="button" type="submit" value="Reimen!" />	
+</div>		
+	
+
+</div>	
+	
+</form>
+
+<script>
+
+
+
+</script>
+
+<div id="output" style="height: 100px; width: 100%">
+</div>
+
+
+
+<div id="resultstable" style="text-align:center">
+    <input type="button" id="first" onclick="firstPage()" value="first" />
+    <input type="button" id="next" onclick="nextPage()" value="next" />
+    <input type="button" id="previous" onclick="previousPage()" value="previous" />
+    <input type="button" id="last" onclick="lastPage()" value="last" />
+
+    <div id="list" style="display:block;"></div>
+    <div id="pages" style="display:block;"></div>
+</div>
+
+<script src="libs/js/reimlexikon.js"></script>
+</body>
+</html>

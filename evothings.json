@@ -1,0 +1,30 @@
+{
+  "name": "reimlexikon",
+  "version": "1.0.0",
+  "title": "Reimlexikon",
+  "description": "Deutsches Reimlexikon",
+  "tags": [],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "cordova-plugin-network-information"
+    },
+    {
+      "name": "cordova-plugin-whitelist"
+    }
+  ],
+  "index-file": "index.html",
+  "uuid": "895b3a71-fba1-42ad-8c47-b79e59f3b042",
+  "icon": "app-icon.png",
+  "doc-url": "http://evothings.com/2.2/doc/examples/template-basic-app.html",
+  "long-description": "Das Reimlexikon richtet sich insbesondere an Dichter, Texter und Songwriter, die schnell das passende Reimwort zu einem Begriff finden wollen. Im der Reimlexikon App sind derzeit über 200.000 Begriffe.",
+  "cordova-id": "net.reimlexikon",
+  "author-name": "HSOK",
+  "author-email": "post@heinrichsturm.de",
+  "author-url": "http://www.heinrichsturm.de"
+}
